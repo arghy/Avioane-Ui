@@ -34,6 +34,8 @@
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   
+  <div id="container">
+  
   <div id="colorbar"><!--Colors are cool and sexy--></div>
   
   <header>
@@ -78,26 +80,30 @@
         
      </div>
      
-    <div id="battle">
-    	
-      <div id="map"></div>
-      
-      <div id="mini_map"></div>
-      
-      <div id="planes_health">
-      	<ul>
-        	<li><div class="mini_plane"></div><div class="plane_health_bar"><div class="plane_health"></div></div></li>
-            <li><div class="mini_plane"></div><div class="plane_health_bar"><div class="plane_health"></div></div></li>
-            <li><div class="mini_plane"></div><div class="plane_health_bar"><div class="plane_health"></div></div></li>
-            <div class="clearfix"></div>
-        </ul>
-      
-      	<div id="console">
-        Last shot: Missed (A-5) (5:20 , 5/5/2012)
-        Last shot: Missed (A-4) (5:20 , 5/5/2012)
-        Last shot: Missed (D-8) (5:20 , 5/5/2012)
-        Last shot: Missed (F-3) (5:20 , 5/5/2012)
-        </div>
+    <div id="body">
+     
+        <div id="battle">
+            
+          <div id="map"></div>
+          
+          <div id="mini_map"></div>
+          
+          <div id="planes_health">
+            <ul>
+                <li><div class="mini_plane"></div><div class="plane_health_bar"><div class="plane_health"></div></div></li>
+                <li><div class="mini_plane"></div><div class="plane_health_bar"><div class="plane_health"></div></div></li>
+                <li><div class="mini_plane"></div><div class="plane_health_bar"><div class="plane_health"></div></div></li>
+                <div class="clearfix"></div>
+            </ul>
+          
+            <div id="console">
+            Last shot: Missed (A-5) (5:20 , 5/5/2012)
+            Last shot: Missed (A-4) (5:20 , 5/5/2012)
+            Last shot: Missed (D-8) (5:20 , 5/5/2012)
+            Last shot: Missed (F-3) (5:20 , 5/5/2012)
+            </div>
+       
+       </div>     
       
       </div>
       
@@ -106,6 +112,7 @@
     </div>
 
 	<div class="separator_dark"><!--Separator--></div>
+    </div>  <!--Container end for sticky footer-->
 	<div id="footer_holder">
         <footer class="clearfix">
             <p>© avioane 2012</p>
