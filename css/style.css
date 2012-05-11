@@ -1,19 +1,81 @@
-/*
-* HTML5 Boilerplate
+/*                                                                                                                                                                                                                                      
+                                                                                                                        
+                                                     ......... ..                                                       
+                                               ..8MMMMMMMMMMMMMMMMMM7 .                                                 
+                                             MMMMMMMMMMMMMMMMMMMMMMMMMMMD                                               
+                                        ..MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                                            
+                                      .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMD                                         
+                                    .NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.                                      
+                                  .MMMMMMMMMMMMMMMMMMMMMMMMOMMMMMMMMMMMMMMMMMMMMMMM.                                    
+                               ..7MMMMMMMMMMMMMMMMMMMMMMMMN.NMMMMMMMMMMMMMMMMMMMMMMM~.                                  
+                               .MMMMMMMMMMMMMMMMMMMMMMMMMM...NMMMMMMMMMMMMMMMMMMMMMMMD.                                 
+                              ,MMMMMMMMMMMMMMMMMMMMMMMMMM7   ?MMMMMMMMMMMMMMMMMMMMMMMMM.                                
+                            ..MMMMMMMMMMMMMMMMMMMMMMMMMMN     MMMMMMMMMMMMMMMMMMMMMMMMMM...                             
+                            $MMMMMMMMMMMMMMMMMMMMMMMMMMMD     .MMMMMMMMMMMMMMMMMMMMMMMMMM:.                             
+                          .:MMMMMMMMMMMMMMMMMMMMMMMMMMMM~     .NMMMMMMMMMMMMMMMMMMMMMMMMMM.                             
+                          .MMMMMMMMMMMMMMMMMMMMMMMMMMMMM.     .MMMMMMMMMMMMMMMMMMMMMMMMMMMM.                            
+                         .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.     .MMMMMMMMMMMMMMMMMMMMMMMMMMMMM                            
+                        .8MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.     .MMMMMMMMMMMMMMMMMMMMMMMMMMMMM=                           
+                        .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM+.      ,MMMMMMMMMMMMMMMMMMMMMMMMMMMMM                           
+                        ZMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN         ZMMMMMMMMMMMMMMMMMMMMMMMMMMMM=                          
+                        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.         .DMMMMMMMMMMMMMMMMMMMMMMMMMMMM..                        
+                        MMMMMMMMMMMMMMMMMMMMMMM.MMMM...         . .NNMM.MMMMMMMMMMMMMMMMMMMMMM..                        
+                      .+MMMMMMMMMMMMMMMMMM.MMM....                   ....NNM.NMMMMMMMMMMMMMMMM,.                        
+                      .MMMMMMMMMMMMMMMMMN...                               . ~MMMMMMMMMMMMMMMM?.                        
+                       MMMMMMMMMMMMN~.. ...                                    ...:ZMMMMMMMMMMD.                        
+                      .MMMMMMMMMMN..                                                .MMMMMMMMMM.                        
+                       MMMMMMMMMMO                  ..+         Z..                   MMMMMMMMN.                        
+                       MMMMMMMMMM.                  $8N         N88.                  8MMMMMMM7.                        
+                      .ZMMMMMMMMM::==+?77ZOO8OOOO888NNN.        NNND88OOO88OZ$7?+=~:,,IMMMMMMM~.                        
+                       .MMMMMMMMMNNNNNNNNNNNNNNNNNNMMMN.       .NMMMNNNNNNNNNNNNNNNNNNMMMMMMMM..                        
+                       .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN.       .NMMMMMMMMMMMMMMMMMMMMMMMMMMMMM..                        
+                        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMZ                          
+                        .MMMMMMMMMMMMMMMMMMMMMMMMMMMMM.         .OMMMMMMMMMMMMMMMMMMMMMMMMMMM                           
+                        .MMMMMMMMMMMMMMMMMMMMMMMMMMMD..         . $MMMMMMMMMMMMMMMMMMMMMMMMMM                           
+                         .MMMMMMMMMMMMMMMMMMMMMMMMM+               :MMMMMMMMMMMMMMMMMMMMMMMM.                           
+                          .MMMMMMMMMMMMMMMMMMMMMMM~.                .MMMMMMMMMMMMMMMMMMMMMM.                            
+                           NMMMMMMMMMMMMMMMMMMMMM.                   .NMMMMMMMMMMMMMMMMMMM$                             
+                           .MMMMMMMMMMMMMMMMMMMM                      .MMMMMMMMMMMMMMMMMMM.                             
+                            .MMMMMMMMMMMMMMMMMM.                        8MMMMMMMMMMMMMMMZ..                             
+                              OMMMMMMMMMMMMMMM..                        .MMMMMMMMMMMMMM+                                
+                               ?MMMMMMMMMMMMMMN.    . ...      .       .NMMMMMMMMMMMMM,                                 
+                               ..MMMMMMMMMMMMMMN.   .IDZ. +.O  :DD.    7MMMMMMMMMMMMM.                                  
+                                 .=MMMMMMMMMMMMMD8OODNNNI~8DN==NNND8O88MMMMMMMMMMMM.                                    
+                                    8MMMMMMMMMMMMMNNMMMMMNNMNNNMMMMNNNMMMMMMMMMMM7                                      
+                                    ..=MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM..                                       
+                                      . ,MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM...                                        
+                                           ~MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM,                                             
+                                               .MMMMMMMMMMMMMMMMMMMMMN....                                              
+                                                  . ..?ODNMMN8O+                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                              ....                                                                      
+                                              $MM=                                                                      
+                                              ....                                                                      
+                        MMMMMM   MMM    .MMM. MMM    MMMMMM     .MMMMMM    ZMM MMMMM.   .MMMMMO                         
+                      ~MMM,:MMM  +MM.  .MMM. ~MM$ .MMMM~=MMM:  IMMM,~MMM   MMMMZ,MMMD  NMMM,~MMM.                       
+                         .. MMM. .MM8 .MMM.  MMM  MMMO.   MMM        MMM   MMM.  ~MM$ ~MM8.  :MM..                      
+                     .NMMMMMMMM. .MMM MMM..  MMM  MMM..  .MMM..MMMMMMMMM  +MM?.  MMM. MMMMMMMMMM..                      
+                     MMM...:MM7   OMMNMM     MMM  MMM . .+MM8 MMM...7MM.  MMM..  MMM  MMM........                       
+                     MMM..+MMM.    MMMM.    MMM.  $MMM..NMMM. MMM..MMMM.  MMM.  .MMM.  MMM..IMMD.                       
+                     .MMMMMNMM.   .MMM..    MMM.  .+MMMMMM:.  .MMMMNMMM. 8MM:   MMM.   .MMMMMM..  
+					 
+					 
+					 
+
+
+*/
+/*	arghy,al,temi
+* 
 *
-* What follows is the result of much research on cross-browser styling.
-* Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+* Big thanks to Nicolas Gallagher, Jonathan Neal,
 * Kroc Camen, and the H5BP dev community and team.
 *
-* Detailed information about this CSS: h5bp.com/css
+* 
 *
 * ==|== normalize ==========================================================
 */
-
-
-/* =============================================================================
-HTML5 display definitions
-========================================================================== */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
@@ -222,7 +284,7 @@ Author: Arghirescu Alexandru @ codebox.ro
 Globalaaaaaaaaaalllllllllllllllllllllllll
 ========================================================================== */
    
-.separator{width:100%;border-top:1px solid #d6d5d5;border-bottom:1px solid #fff;margin:0px;padding:0px;}
+.separator{width:100%;border-top:1px solid #a1a1a1;border-bottom:1px solid #fff;margin:0px;padding:0px;}
 .separator_dark{width:100%;border-top:1px solid #888;border-bottom:1px solid #c0c0c0;margin:0px;padding:0px;}
 
 h3{text-align:center; font-weight:bold;padding:0px margin:0px;}
@@ -461,16 +523,15 @@ margin:-2px 10px 0px 4px; }
 
 
 #sub_holder{width:100%;
-height:133px;
-background:url(../img/sub_bg.png) repeat-x;
-
+height:140px;
+background:#d6d6d6;
+box-shadow:0px 0px 20px #dcdcdc;
 }
 
 #sub_header{
-width:920px;
-height:115px;
+width:940px;
+height:138px;
 margin:0px auto;
-padding:5px 0px 5px 0px;
 clear:both;
 }
 
@@ -479,19 +540,19 @@ font-size:14px;
 color:#838383;
 text-shadow:-1px 1px #fff;
 width:500px;
-margin-top:30px;
+margin-top:38px;
 float:left;
 
 }
 
 #sub_header_avion{
 float:left;
-margin:10px 30px 0px 30px;
+margin:18px 30px 0px 30px;
 }
 
 #sub_header_online_count{
-float:left;
-margin-top:27px;
+float:right;
+margin-top:37px;
 }
 
 #sub_header_online_count ul{
@@ -519,8 +580,8 @@ text-shadow:-3px 3px 0px #a9a9a9;
 }
 
 #sub_header_online_count_text{
-float:left;
-margin-top:47px;
+float:right;
+margin-top:55px;
 background:url(../img/count_text.png) no-repeat;
 width:11px;
 height:41px;
