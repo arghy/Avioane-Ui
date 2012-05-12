@@ -287,7 +287,7 @@ Globalaaaaaaaaaalllllllllllllllllllllllll
 .separator{width:100%;border-top:1px solid #a1a1a1;border-bottom:1px solid #fff;margin:0px;padding:0px;}
 .separator_dark{width:100%;border-top:1px solid #888;border-bottom:1px solid #c0c0c0;margin:0px;padding:0px;}
 
-h3{text-align:center; font-weight:bold;padding:0px margin:0px;}
+h3{text-align:center; font-weight:bold;padding:0px margin:0px;display:inline;}
 
  #notification{
 width:100%;
@@ -350,6 +350,7 @@ vertical-align: middle;
 -o-border-radius: 4px;
 
 border-radius: 4px;
+cursor:pointer;
 }
 
 .button:hover{
@@ -363,7 +364,16 @@ text-shadow:#fff 0 1px 0px
 
 .button:active{background:#eee}
 
-.buttonz:hover /* let's make it more sexy on hover */
+
+/* small button */
+
+
+
+/* ------------------------ COLORS --------------------- */
+
+/* blue button */
+
+.blue_button:hover /* let's make it more sexy on hover */
 {
 text-decoration: none !important;
 color: white;
@@ -377,7 +387,7 @@ background-image: -ms-linear-gradient(top, #6AA8D2,#4391C6);
 background-image: linear-gradient(top, #6AA8D2,#4391C6);
 }
 
-.buttonz:active /* and when you press!!! */
+.blue_button:active /* and when you press!!! */
 {
 text-decoration: none !important;
 color: white;
@@ -743,6 +753,19 @@ border:1px solid #d6d5d5;
 
 /* ========Division Stats=========================================*/
    
+#division_stats_header{
+width:940px;
+margin:35px 0px 15px 0px;
+}
+
+	#division_stats_header span{
+		float:left;
+	}
+	
+		#division_stats_header span+span{
+			float:right;
+		}
+   
 #division_stats{
 width:938px;
 padding:1px;
@@ -764,26 +787,18 @@ box-shadow:0px 5px 10px #dedede;
     -webkit-border-radius: 6px;
     border-radius: 6px;
 	font-size:14px;
+	font-weight:bold;
 }
 
-
 .bordered th {
-    border-left: 1px solid #fff;
+	
+	border-left: 1px solid #fff;
 	border-right:1px solid #ccc;
     border-top: 1px solid #ccc;
     padding: 10px;
     text-align: left;    
 	font-weight:bold;
-}
-
-
-.bordered td{
-    padding: 10px 0px 10px 10px;
-    
-}	
-
-
-.bordered th {
+	
     background-color: #dfdfdf;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(#d2d2d2));
     background-image: -webkit-linear-gradient(top, #eaeaea, #d2d2d2);
@@ -797,6 +812,11 @@ box-shadow:0px 5px 10px #dedede;
     border-top: none;
     text-shadow: 0 1px 0 rgba(255,255,255,.5); 
 }
+
+.bordered td{
+    padding: 10px 0px 10px 10px;
+    
+}	
 
 
 .bordered td:first-child, .bordered th:first-child {
@@ -841,6 +861,10 @@ box-shadow:0px 5px 10px #dedede;
 	background:#f3f3f3;
 }
 
+.bordered  td+td{
+	font-weight:normal;
+}
+
 .bordered tbody tr:nth-child(even) {
     background: #ececec;
     border-top:1px solid #fff;  
@@ -869,6 +893,19 @@ box-shadow:0px 5px 10px #dedede;
 
 
 /* ========Online Players=========================================*/
+
+#online_players_list_header{
+width:940px;
+margin:35px 0px 15px 0px;
+}
+
+	#online_players_list_header span{
+		float:left;
+	}
+	
+		#online_players_list_header span+span{
+			float:right;
+		}
 
 #online_players_list{
 padding:0px 0px 0px 24px;

@@ -94,7 +94,10 @@
     
         <div id="body">
         	
-        	<h3>Divison D1 Statistics</h3>
+            <div id="division_stats_header" class="clearfix">
+                <span><h3>Divison D1 Statistics</h3></span>
+                <span><form method="post" action="#" id="division_stats_sort"><label for="stats_sort">Order by:</label><select id="stats_sort"><option>rank</option><option>level</option><option>badges</option><option>money</option></select></form></span>
+            </div>
         
         	<div id="division_stats">
             	<table id="division_ranks" class="bordered">
@@ -168,14 +171,17 @@
                         </tbody>
                     	<tfoot>
                             <tr>
-                                <td colspan="5">load more</td>
+                                <td colspan="5"><a class="button">load more</a></td>
                             </tr>
             			</tfoot>                     
                     
             	</table>
             </div>
         
-            <h3>Online Lobby Players</h3>
+            <div id="online_players_list_header" class="clearfix">
+                <span><h3>Online Players List</h3></span>
+                <span><form method="post" action="#" id="division_stats_sort"><label for="online_sort">Order by:</label><select id="online_sort"><option>rank</option><option>level</option><option>badges</option><option>money</option></select></form></span>
+            </div>
         
             <ul id="online_players_list" class="clearfix">
             
