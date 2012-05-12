@@ -265,7 +265,7 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
 Tables
 ========================================================================== */
 
-table { border-collapse: collapse; border-spacing: 0; }
+table { brder-collapse:collapse;border-spacing:0; }
 td { vertical-align: top; }
 
 
@@ -507,7 +507,7 @@ cursor:pointer;
 
 /*USER MENU --------- Avatar ----------------*/
 
-#user_avatar{
+.user_avatar{
 float:left;
 width:21px;
 height:21px;
@@ -522,7 +522,7 @@ margin:-2px 10px 0px 4px; }
 
 
 
-#sub_holder{width:100%;
+#sub_header_holder{width:100%;
 height:140px;
 background:#d6d6d6;
 box-shadow:0px 0px 20px #dcdcdc;
@@ -590,10 +590,10 @@ height:41px;
 
 
 #body{
-	width:920px;
-	padding:20px;
+	width:940px;
+	padding:0px 10px 0px 10px;
 	margin:0px auto;
-	margin-top:20px;
+	margin-top:10px;
 	}
 
 #insula{width:940px;
@@ -630,8 +630,7 @@ text-shadow:0px -1px #696969;
 Lobby Page
 ========================================================================== */
    
-   
-   /* ========User=========================================*/
+   /* ========Online User=========================================*/
 
 
 #user_stats{
@@ -742,10 +741,139 @@ border:1px solid #d6d5d5;
 
 /* ========Lobby=========================================*/
 
+/* ========Division Stats=========================================*/
+   
+#division_stats{
+width:938px;
+padding:1px;
+background:#fff;
+border-radius:5px;
+-moz-border-radius:5px;
+box-shadow:0px 5px 10px #dedede;
+}
+
+#division_ranks {
+    width:100%;    
+}
+
+	 /* ========Division Table ;)=========================================*/
+
+.bordered {
+    border: solid #c6c6c6 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+	font-size:14px;
+}
+
+
+.bordered th {
+    border-left: 1px solid #fff;
+	border-right:1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;    
+	font-weight:bold;
+}
+
+
+.bordered td{
+    padding: 10px 0px 10px 10px;
+    
+}	
+
+
+.bordered th {
+    background-color: #dfdfdf;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(#d2d2d2));
+    background-image: -webkit-linear-gradient(top, #eaeaea, #d2d2d2);
+    background-image:    -moz-linear-gradient(top, #eaeaea, #d2d2d2);
+    background-image:     -ms-linear-gradient(top, #eaeaea, #d2d2d2);
+    background-image:      -o-linear-gradient(top, #eaeaea, #d2d2d2);
+    background-image:         linear-gradient(top, #eaeaea, #d2d2d2);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+      
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+}
+
+
+.bordered td:first-child, .bordered th:first-child {
+    border-left: none;
+}
+
+.bordered th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+.bordered th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.bordered th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.bordered tr:last-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.bordered tr:last-child  {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+.bordered tbody td{
+	border-top:1px solid #fff;
+}
+
+.bordered tbody tr{
+	background:#f3f3f3;
+}
+
+.bordered tbody tr:nth-child(even) {
+    background: #ececec;
+    border-top:1px solid #fff;  
+
+}
+
+.bordered tbody tr:hover {
+    background: #eaeaea;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;     
+}  
+
+.bordered tfoot tr{
+	background:#d3d3d3;
+}
+
+.bordered tfoot td{
+	text-align:center;
+	color:#fff;
+	font-weight:bold;
+	border-top:1px solid #acaaaa;
+}
+
+
+/* ========Online Players=========================================*/
 
 #online_players_list{
 padding:0px 0px 0px 24px;
 margin:0px auto;
+margin-bottom:20px;
 clear:both;
 }
 
@@ -1015,11 +1143,32 @@ text-shadow:-1px 1px #000;
 }
 
 
+/* =============================================================================
+404 parallax
+========================================================================== */
 
 
+#error{
+width:940px;
+height:390px;
+background:url(../img/404/bg.png) ;
+background-size:100% 390px;
+margin:0 auto;
+margin-bottom:100px;
+padding:0;
+}
 
+#parallax{
+	position:relative; overflow:hidden; width:940px; height:390px;
+}
 
-
+#avion{
+	position:absolute;
+	width:333px;
+	height:126px;
+	top:200px;
+	left:300px;
+}
 
 
 

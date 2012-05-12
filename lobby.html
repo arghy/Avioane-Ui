@@ -51,7 +51,7 @@
             
             <nav id="user_menu_logged">
                 <ol>
-                    <li><div id="user_avatar"><img src="img/user/menu/avatar.png" alt="avatar" /></div><h3 id="user_name">arghy zmeu</h3></li>
+                    <li><div class="user_avatar"><img src="img/user/menu/avatar.png" alt="avatar" /></div><h3 id="user_name">arghy zmeu</h3></li>
                     <li><img src="img/user/menu/icon_drop.png"/></li>
                     <li><img src="img/user/menu/icon_logout.png"/></li>
                 </ol>
@@ -68,52 +68,129 @@
                 
         </header>
         
-         <div id="sub_holder">
-            
-                <div id="sub_header">
-                
-                 <ul id="user_stats">
-                 
-                    <li>
-                    <div id="user_division"><h2 class="stats_header">division</h2><h3 class="stats_text">D</h3></div>
-                    </li>
+          <div id="sub_header_holder">
+             <div class="separator"></div>
+                    <div id="sub_header">
                     
-                    <li>
-                    <div id="user_level"><h2 class="stats_header">level</h2><h3 class="stats_text">17</h3></div>
-                    <div id="user_level_bar"><div id="user_level_bar_progress"></div></div>
-                    <div id="user_level_points"><h4 class="stats_points">70</h4></div>
-                    </li>
-                    
-                    <li>
-                    <div id="user_clan"><h2 class="stats_header">clan</h2><h3 class="stats_text"><img src="img/user/stats/clan_img.png" alt="clan"/></h3></div>
-                    <div id="user_clan_bar"></div>
-                    <div id="user_clan_bar_end"></div>
-                    </li>
-                    
-                    <li>
-                    <a href="#"><div id="user_battle"><h3 class="stats_text">battle</h3></div></a>
-                    </li>
-                    
-                 </ul>
-                    
-                </div>
-            
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor   
+        incid  idunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+        nostrud exercitation ullamco laboris nisi ut ali</p>
+        
+                        <div id="sub_header_avion"><img src="img/avion.png" alt="Avion"/></div>
+                        <div id="sub_header_online_count_text"></div>
+                        <div id="sub_header_online_count">
+                            <ul>
+                                <li><h3>0</h3></li>
+                                <li><h3>2</h3></li>
+                               
+                                <div class="clearfix"></div>
+                            </ul>
+                            
+                        </div>
+                      
+                    </div>
+             <div class="separator"></div>        
          </div>
     
         <div id="body">
+        	
+        	<h3>Divison D1 Statistics</h3>
         
-            <h3>Online Players</h3>
+        	<div id="division_stats">
+            	<table id="division_ranks" class="bordered">
+                        <thead>
+                        <tr>
+                            <th>rank</th>        
+                            <th>user</th>
+                            <th>level</th>
+                            <th>battles</th>
+                            <th>badges</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>        
+                            <td><div class="user_avatar"><img src="img/user/menu/avatar.png" /></div>arghy zmeu</td>
+                            <td>23</td>
+                            <td>24 won / 7 lost</td>
+                            <td>28 *view locker)</td>
+                        </tr>        
+                        <tr>
+                            <td>1</td>        
+                            <td><div class="user_avatar"><img src="img/user/menu/avatar.png" /></div>arghy zmeu</td>
+                            <td>23</td>
+                            <td>24 won / 7 lost</td>
+                            <td>28 *view locker)</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>        
+                            <td><div class="user_avatar"><img src="img/user/menu/avatar.png" /></div>arghy zmeu</td>
+                            <td>23</td>
+                            <td>24 won / 7 lost</td>
+                            <td>28 *view locker)</td>
+                        </tr>    
+                        <tr>
+                            <td>1</td>        
+                            <td><div class="user_avatar"><img src="img/user/menu/avatar.png" /></div>arghy zmeu</td>
+                            <td>23</td>
+                            <td>24 won / 7 lost</td>
+                            <td>28 *view locker)</td>
+                    
+                        </tr>
+                        <tr>
+                            <td>1</td>        
+                            <td><div class="user_avatar"><img src="img/user/menu/avatar.png" /></div>arghy zmeu</td>
+                            <td>23</td>
+                            <td>24 won / 7 lost</td>
+                            <td>28 *view locker)</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>        
+                            <td><div class="user_avatar"><img src="img/user/menu/avatar.png" /></div>arghy zmeu</td>
+                            <td>23</td>
+                            <td>24 won / 7 lost</td>
+                            <td>28 *view locker)</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>        
+                            <td><div class="user_avatar"><img src="img/user/menu/avatar.png" /></div>arghy zmeu</td>
+                            <td>23</td>
+                            <td>24 won / 7 lost</td>
+                            <td>28 *view locker)</td>
+                        </tr>    
+                        <tr>
+                    		<td>1</td>        
+                            <td><div class="user_avatar"><img src="img/user/menu/avatar.png" /></div>arghy zmeu</td>
+                            <td>23</td>
+                            <td>24 won / 7 lost</td>
+                            <td>28 *view locker)</td>
+                        </tr>
+                        </tbody>
+                    	<tfoot>
+                            <tr>
+                                <td colspan="5">load more</td>
+                            </tr>
+            			</tfoot>                     
+                    
+            	</table>
+            </div>
         
-            <ul id="online_players_list">
+            <h3>Online Lobby Players</h3>
+        
+            <ul id="online_players_list" class="clearfix">
             
-                <li><h2 class="online_player_name"><h2 class="online_player_name"><a class="online_player_link">zmeus</a></h2><div class="online_player_plane"><img src="img/lobby/avioane/mig.png" alt="mig" /></div><h3 class="online_player_battle"><a href="#">battle</a></h3></li>
+                <li><h2 class="online_player_name"<t><h2 class="online_player_name"><a class="online_player_link">zmeus</a></h2><div class="online_player_plane"><img src="img/lobby/avioane/mig.png" alt="mig" /></div><h3 class="online_player_battle"><a href="#">battle</a></h3></li>
                 
                 
                 <li><h2 class="online_player_name"><h2 class="online_player_name"><a class="online_player_link">hawk</a></h2><div class="online_player_plane"><img src="img/lobby/avioane/airborne.png" alt="mig" /></div><h3 class="online_player_battle"><a href="#">battle</a></h3></li>
                 
               
-                    
-                <div class="clearfix"></div>
+              	
+                <li><h2 class="online_player_name"><h2 class="online_player_name"><a class="online_player_link">hawk</a></h2><div class="online_player_plane"><img src="img/lobby/avioane/airborne.png" alt="mig" /></div><h3 class="online_player_battle"><a href="#">battle</a></h3></li>
+                
+                
+                <li><h2 class="online_player_name"><h2 class="online_player_name"><a class="online_player_link">hawk</a></h2><div class="online_player_plane"><img src="img/lobby/avioane/airborne.png" alt="mig" /></div><h3 class="online_player_battle"><a href="#">battle</a></h3></li>
+                
             
             </ul>
            
