@@ -532,7 +532,8 @@ margin:-2px 10px 0px 4px; }
 
 
 
-#sub_header_holder{width:100%;
+#sub_header_holder{
+width:100%;
 height:140px;
 background:#d6d6d6;
 box-shadow:0px 0px 20px #dcdcdc;
@@ -542,7 +543,6 @@ box-shadow:0px 0px 20px #dcdcdc;
 width:940px;
 height:138px;
 margin:0px auto;
-clear:both;
 }
 
 #sub_header p{
@@ -552,7 +552,6 @@ text-shadow:-1px 1px #fff;
 width:500px;
 margin-top:38px;
 float:left;
-
 }
 
 #sub_header_avion{
@@ -641,9 +640,142 @@ Lobby Page
 ========================================================================== */
    
    /* ========Online User=========================================*/
+    
+ #user_stats{
+ 	height:110px;
+	width:940px;
+	margin-top:14px;
+ }
+ 
+  .stats_square{
+	width:23px;
+	height:23px;
+	padding:12px;
+	font-size:18px;
+	text-shadow:-1px 1px #fff;
+	font-weight:bold;
+ }
+ 
+ .stats_contrast{
+ 	background:#d2d2d2;
+	-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.9);
+	-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.9);
+	box-shadow:inset 0 1px 0 rgba(255,255,255,0.9);
+	border-radius:4px;
+	-moz-border-radius:4px;	 
+	border: 1px solid #a1a1a1;
+	border-bottom:2px solid #a1a1a1;
+ }
+   
+ #user_level_holder{
+ 	width:333px;
+	height:47px;
+	position:relative;
+ }
+ 
+ #user_level{
+	position:absolute;
+	z-index:3;
+ }
+ 
+ #user_level_bar_holder{
+ 	width:240px;
+	height:47px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topright:5px;
+	position:absolute;
+	z-index:2;
+	left:42px;
+ }
+ 
+ 	#user_level_bar{
+	  width:217px;
+	  height:20px;
+	  margin:13px 5px 0px 12px;
+	  border:1px solid #a1a1a1;
+	  background:#a1a1a1;
+	  border-radius:4px;
+	  -moz-border-radius:4px;
+	}
+	
+		#user_level_bar_fluid{
+			background:#fafafa url(../img/user/stats/bar_bg.png) repeat-x;
+			 border-radius:4px;
+	  		-moz-border-radius:4px;
+			height:20px;
+			width:70%;
+		}
+ 
+	 #user_level_progress{
+		position:absolute;
+		right:5px;
+		z-index:1;
+		width:19px;
+		height:15px;
+		padding:16px ;
+		font-size:11px;
+		 }
+	 
+	#user_division_holder{
+ 	width:333px;
+	height:47px;
+	position:relative;
+	margin-top:15px;
+ 	}	
+	
+	#user_division{
+	position:absolute;
+	z-index:3;
+	padding-left:17px;
+	padding-right:7px;
+	}
+	
+	#user_division_relegation{
+	position:absolute;
+	z-index:2;
+	left:44px;
+	background:#c5c5c5;
+	padding-left:17px;
+	padding-right:7px;
+	}
+	
+	#user_division_status{
+	width:196px;
+	height:47px;
+	position:absolute;
+	left:87px;
+	z-index:1;
+	}
+	
+		#user_division_bar_holder{
+		width:177px;
+		height:16px;
+		background:#f4f4f4 url(../img/user/stats/gradaje.png) no-repeat center bottom;
+		border:1px solid #a1a1a1;
+		border-radius:3px;
+		-moz-border-radius:3px;
+		margin-top:12px;
+		margin-left:11px;
+		}
+		
+		#user_division_bar{
+		width:50%;
+		height:16px;
+		background:url(../img/user/stats/indicator.png) no-repeat right top;
+		}
+	
+	#user_division_promotion{
+	position:absolute;
+	right:5px;
+	background:#e9e9e9;
+	padding-left:17px;
+	padding-right:7px;
+	}
 
 
-#user_stats{
+/*#user_stats{
 width:880px;
 height:100px;
 margin:0px auto;
@@ -747,7 +879,7 @@ border:1px solid #d6d5d5;
 
 #user_battle h3{font-size:15px; margin-top:37px; color:#333; text-shadow:-1px 1px #fff;text-decoration:none;}
 #user_battle h3:hover{color:#646464;}
-
+*/
 
 /* ========Lobby=========================================*/
 
