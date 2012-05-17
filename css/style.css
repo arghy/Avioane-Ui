@@ -422,12 +422,12 @@ padding:0px;
 background:url(../img/colorbar.png) repeat-x;
 }
 
-header { width:920px;
+#header { 
+width:940px;
 height:90px;
 margin:0px auto;
 margin-top:25px;
-padding:0px 10px 0px 10px;
-clear:both;
+padding:0px;
 }
 
 #logo { width:173px;
@@ -602,7 +602,6 @@ height:41px;
 
 #body{
 	width:940px;
-	padding:0px 10px 0px 10px;
 	margin:0px auto;
 	margin-top:10px;
 	}
@@ -897,117 +896,18 @@ Lobby Page
 		
 	#user_battle_button{
 	width:108px;
-	height:109px;
+	height:76px;
 	margin-left:10px;
+	padding-top:33px;
 	float:left;
+	text-align:center;
 	}
-
-
-/*#user_stats{
-width:880px;
-height:100px;
-margin:0px auto;
-margin-top:12px;
-padding:0px;
-list-style:none;
-
-}
-
-.stats_header{font-size:12px; color:#fff; text-decoration:underline;font-weight:bold;padding:0px;margin:0px;margin-top:30px;text-align:center;}
-.stats_text{font-size:20px; color:#fff; font-weight:bold;padding:0px;margin:0px;margin-top:0px;text-align:center;}
-.stats_points{font-size:12px; color:#fff;;font-weight:bold;padding:0px;margin:0px;margin-top:16px;text-align:center;}
-
-#user_stats li{
-padding:0px;
-margin-right:20px;
-float:left;
-}
-
-#user_stats li:last-child{margin-right:0px;}
-
-
-#user_division{
-width:86px;
-height:100px;
-padding:0px;
-margin:0px;
-background:url(../img/user/stats/divizion.png) no-repeat;
-border:1px solid #d6d5d5;
-}
-
-#user_level{
-float:left;
-width:86px;
-height:100px;
-padding:0px;
-margin:0px;
-background:url(../img/user/stats/level.png) no-repeat;
-}
-
-#user_level_bar{
-width:200px;
-height:30px;
-float:left;
-margin-top:35px;
-margin-left:-1px;
-padding-right:20px;
-background:#333 url(../img/user/stats/bar_bg.png) repeat;
-}
-
-#user_level_bar_progress{
-width:100%;
-height:5px;
-margin-top:12px;
-background:#4891a9;
-}
-
-#user_level_points{
-float:left;
-width:48px;
-height:48px;
-margin-top:25px;
-margin-left:-17px;
-background:url(../img/user/stats/level_points.png);
-}
-   
-    #user_clan{
-float:left;
-width:86px;
-height:100px;
-padding:0px;
-margin:0px;
-background:url(../img/user/stats/clan.png) no-repeat;
-}
-
-#user_clan_bar{
-width:200px;
-height:50px;
-float:left;
-margin-top:25px;
-margin-left:-1px;
-background:#333 url(../img/user/stats/bar_bg.png) repeat;
-}
-
-#user_clan_bar_end{
-background:url(../img/user/stats/user_clan_bar_end.png);
-width:14px;
-height:50px;
-float:left;
-margin-top:25px;
-}
-
-#user_battle{
-width:86px;
-height:100px;
-padding:0px;
-margin:0px;
-background:url(../img/user/stats/battle.png) no-repeat;
-border:1px solid #d6d5d5;
-}
-
-#user_battle h3{font-size:15px; margin-top:37px; color:#333; text-shadow:-1px 1px #fff;text-decoration:none;}
-#user_battle h3:hover{color:#646464;}
-*/
+	
+	#user_battle_button span{
+	text-shadow:-1px 1px 0px #fff;
+	font-size:16px;
+	font-weight:bold;
+	}
 
 /* ========Lobby=========================================*/
 
@@ -1199,6 +1099,200 @@ margin-left:0px;
     .online_player_name{font-size:14px; font-weight:bold; padding:0px; margin:29px 0px 10px 24px; text-align:center;color:#fff; width:143px; display:block;}
     .online_player_plane{width:123px; height:123px; margin:0px auto; margin-top:17px;}
 .online_player_battle{font-size:14px; font-weight:bold; padding:0px; margin:18px 0px 10px 24px; text-align:center;color:#fff; width:143px; display:block;}
+
+/* =============================================================================
+Profile
+========================================================================== */
+
+#profile_page{
+	width:940px;
+	margin:0px auto;
+	position:relative;
+	margin:10px 0px 50px 0px;
+}
+
+#profile_body{
+	float:left;
+	width:720px;
+	background:#fcfcfc;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	box-shadow:0px 5px 10px #dedede;
+}
+
+#profile_top{
+	width:720px;
+	height:160px;
+	border-bottom:1px solid #eaeaea;
+
+}
+
+	#profile_avatar{
+		float:left;
+		width:93px;
+		height:93px;
+		background:#a1a1a1;
+		border-radius:5px;
+		-moz-border-radius:5px;
+		padding:6px;
+		margin:25px 0px 0px 25px;
+	}
+	
+	#profile_stats{
+		float:left;
+		width:500px;
+		height:100px;
+		margin-left:25px;
+		margin-top:30px;
+	}
+	
+		#profile_stats span{
+			float:left;
+		}
+		
+		#profile_stats h2{
+			padding:0px;
+			margin-left:10px;
+			color:#333;
+			font-size:18px;
+			font-weight:bold;
+			display:inline;
+		}
+		
+		#profile_stats h3{
+			margin-left:10px;
+			font-size:14px;
+			font-weight:bold;
+			color:#999;
+
+		}
+		
+		#profile_stats ul{
+			list-style:none;
+			padding:0px;
+			font-size:14px;
+			font-weight:normal;
+			color:#999;
+		}
+		
+			#profile_stats ul li{
+				
+			}
+	
+	#profile_settings{
+		float:right;
+		width:60px;
+		height:45px;
+		padding-top:5px;
+		background:#fcfcfc;
+		border-radius:5px;
+		-moz-border-radius:5px;
+		border-top-left-radius:0px;
+		border-bottom-left-radius:0px;
+		margin-right:-59px;
+		box-shadow:5px 5px 5px #e6e6e6;
+		font-size:14px;
+		color:#d6d9d8;
+		font-weight:bold;
+		text-align:center;
+		cursor:pointer;
+	}
+	
+	#profile_settings:hover{
+		background:#f3f3f3;
+	}
+	
+#profile_last_badge{
+	width:720px;
+	border-bottom:1px solid #eaeaea;
+}
+
+	#profile_last_badge_description{
+		width:560px;
+		height:120px;
+		margin:0px auto;
+		margin-top:20px;
+	}
+	
+		#profile_last_badge_description p{
+			float:right;
+			font-size:14px;
+			width:370px;
+			text-align:center;
+		}
+
+#profile_locker{
+	width:560px;
+	margin:0px auto;
+	margin-top:30px;
+	margin-bottom:30px;
+	background:#7d8584 url(../img/user/profile/locker/bg.png) repeat center;
+	border-radius:5px;
+	-moz-border-radius:5px;
+
+	
+}
+
+	#locker_top{
+	width:519px;
+	height:93px;
+	margin:0px auto;
+	margin-top:20px;
+	background:url(../img/user/profile/locker/top.png) no-repeat center;
+	}
+	
+	#locker_middle{
+	width:519px;
+	margin:0px auto;
+	background:url(../img/user/profile/locker/middle.png) repeat-y center;
+	}
+
+		#locker_rafturi{
+		list-style:none;
+		padding:0px;
+		margin:0px;
+		margin-top:0px;
+		}
+	
+		.locker_raft{
+		width:519px;
+		height:148px;
+		margin:0px auto;
+		background:url(../img/user/profile/locker/raft.png) no-repeat center;
+		}
+		
+		  .trophy{
+			margin-top:-30px;
+			margin-left:47px;
+			float:left;
+		  }
+	
+	#locker_bottom{
+	width:519px;
+	height:70px;
+	margin:0px auto;
+	background:url(../img/user/profile/locker/bottom.png) no-repeat center;
+	}
+	
+	
+	#locker_stickers{
+	width:519px;
+	height:200px;
+	margin-top:15px;
+	margin-bottom:15px;
+	}
+	
+	
+	
+	
+#profile_sidebar{
+	float:right;
+	width:180px;
+	height:200px;
+	background:#666666;
+	margin-top:100px;
+}
+	
 
 /* =============================================================================
 Versus Page
