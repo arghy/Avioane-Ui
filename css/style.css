@@ -1277,12 +1277,22 @@ Profile
 	
 	#locker_stickers{
 	width:519px;
-	height:200px;
+	margin:0px auto;
 	margin-top:15px;
 	margin-bottom:15px;
 	}
 	
+	#locker_stickers:hover{
+	opacity:0.5;
+	background:#333 url(../img/user/profile/locker/sticker_info.png) center bottom no-repeat;
+	border:1px dashed #fcfcfc;
+	}
+
 	
+		.sticker{
+		margin:10px;
+		float:left;
+		}
 	
 	
 #profile_sidebar{
