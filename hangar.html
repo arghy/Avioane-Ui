@@ -12,7 +12,7 @@
        More info: h5bp.com/i/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Avioane | Hangar</title>
+  <title>Avioane</title>
   <meta name="Avioane" content="avioane,joc,airplanes,battle">
 
   <!-- Mobile viewport optimized: h5bp.com/viewport -->
@@ -34,69 +34,103 @@
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   
- 	<header id="header" class="clearfix">
-  		
-         <div id="logo"><a href="#"><img src="img/logo.png" alt="Avioane" /></a></div>
+   <div id="container">
   
-		<!--<nav id="user_menu">
-			<ul>
-            	<li>Register</li>
-				<li>Login</li>
-			</ul>
-		</nav>-->
-        
-        <nav id="user_menu_logged">
-			<ul>
-            	<li><div id="user_avatar"><img src="img/user/menu/avatar.png" alt="avatar" /></div><h3 id="user_name">arghy zmeu</h3></li>
-            	<li><img src="img/user/menu/icon_drop.png"/></li>
-                <li><img src="img/user/menu/icon_logout.png"/></li>
-			</ul>
-		</nav>
-        
-        <nav id="game_menu">
-			<ul>
-				<li>acasa</li>
-                <li>lupta</li>
-                <li>hangar</li>
-                <li>hall of fame</li>
-			</ul>
-		</nav>
-        
-        <div id="notification" class="alert">Congratulations! You’we just leveled up!</div>
-         
-	</header>
+       <div id="colorbar"><!--Colors are cool and sexy--></div>
+       <div id="notification" class="alert">VTemian wants to battle you! Do you accept the battle? <a href="#" class="button">Yes</a> or <a href="#" class="button">No</a></div>
+      
+      <header id="header" class="clearfix">
+            
+            <div id="logo"><a href="#"><img src="img/logo.png" alt="Avioane" /></a></div>
+      
+             <nav id="user_menu_logged">
+                <ol>
+                    <li><div class="user_avatar"><img src="img/user/menu/avatar.png" alt="avatar" /></div><h3 id="user_name">arghy zmeu</h3></li>
+                    <li><img src="img/user/menu/icon_drop.png"/></li>
+                    <li><img src="img/user/menu/icon_logout.png"/></li>
+                </ol>
+            </nav>
+            
+            <nav id="game_menu">
+                <ol>
+                    <li><a href="#">acasa</a></li>
+                    <li><a href="#">hangar</a></li>
+                    <li><a href="#">batalie</a></li>
+                    <li><a href="#">hall of fame</a></li>
+                </ol>
+            </nav>
+               
+        </header>
+       
+    <div id="body">
     
-     <div id="sub_holder">
+       	<div id="hangar" class="clearfix">
         
-        	<div id="sub_header">
-                       	
-            </div>
-        
-     </div>
-     
-    <div id="hangar">
-    	
         <div id="hangar_sidebar">
-        	<div id="plane_stats"></div>
-            <div id="buy_gas"></div>
+        	<div id="customize_platform">
+            	<div id="hangar_platform" class="clearfix">
+                    <h2 class="online_player_name">zmeus</h2>
+                    <div class="online_player_plane"><img src="img/lobby/avioane/mig.png" alt="mig" /></div>
+                    <div id="customize_platform_button">customize</div>
+                </div>
+            </div>
+            <div id="plane_info">
+            	<ul>
+                	<li>Model: Mig 16</li>
+                    <li>Max Weapon Load: 4</li>
+                    <li>Nickaname: Hawk</li>
+                </ul>
+            </div>
+            <div id="buy_weapons" class="stats_contrast">
+             	buy weapons
+            </div>
         </div>
         
-        <div id="hangar_content">
-        	<div id="hangar_bg1"></div>
-            <div id="hangar_bg2"></div>
-            <div id="avion"><img src="img/hangar/avioane/airborne.png" alt="mig"/></div>
+        <div id="hangar_body">
+            <div id="hangar_body_top" class="clearfix">
+            	<div id="plane_holder">
+                	<h4 id="plane_holder_header">Drag weapons to equip</h4>
+                	<img src="img/hangar/avioane/mig.png" alt="plane"/>
+                </div>
+                <div id="weapon_info" class="clearfix">
+                	<ul>
+                    	<li data-info="radar"><img src="img/store/weapons/radar.png" alt="radar" /><ul class="weapon_stats"><li>Radar: Level 1</li><li>Scan range: 8%</li></ul><div class="weapon_change">remove</div></li>
+                        <li data-info="strike"><img src="img/store/weapons/stealth.png" alt="radar" /><ul class="weapon_stats"><li>Stealth: Level 1</li><li>Power: 100% x1</li></ul><div class="weapon_change">remove</div></li>
+                        <li data-info="stealth"><img src="img/store/weapons/missle.png" alt="radar" /><ul class="weapon_stats"><li>Missle: Level 1</li><li>Miss chance: 50%</li></ul><div class="weapon_change">remove</div></li>
+                        <li data-info="missle"><img src="img/store/weapons/shield.png" alt="radar" /><ul class="weapon_stats"><li>Shield: Level 1</li><li>Strike block: 1</li></ul><div class="weapon_change">remove</div></li>
+                    </ul>
+                </div>	
+            </div>
+            <div id="hangar_body_bottom">
+            	<div id="weapon_holder" class="clearfix">
+                	<ul>
+                        <li><div class="weapon" data-type="radar"><img src="img/store/weapons/radar.png" alt="radar"/></div><div class="weapon_amount">17</div></li>
+                        <li><div class="weapon" data-type="strike"><img src="img/store/weapons/strike.png" alt="radar"/></div><div class="weapon_amount">1</div></li>
+                        <li><div class="weapon" data-type="stealth"><img src="img/store/weapons/stealth.png" alt="radar"/></div><div class="weapon_amount">4</div></li>
+                        <li><div class="weapon" data-type="deviation"><img src="img/store/weapons/deviation.png" alt="radar"/></div><div class="weapon_amount">3</div></li>
+                        <li><div class="weapon" data-type="missle"><img src="img/store/weapons/missle.png" alt="radar"/></div><div class="weapon_amount">5</div></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        
-        <div class="clearfix"></div>
-        	
+    	
+       
+    	</div>
+    
+    </div>
+  	
+
+	
+      <div class="separator_dark"><!--Separator--></div>
+    </div>  <!--Container end for sticky footer-->
+     
+	<div id="footer_holder">
+        <footer class="clearfix">
+            <p>© avioane 2012</p>
+        </footer>
     </div>
 
-
-
-	<footer>
-    	<div class="separator"><!--Separator--></</div>
-		<p>© avioane 2012</p>
-	</footer>
 
 
   <!-- JavaScript at the bottom for fast page loading -->
@@ -104,6 +138,10 @@
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+  
+  <!-- Load Jquery UI via Google -->
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-ui.min.js"><\/script>')</script>
 
   <!-- scripts concatenated and minified via build script -->
   <script src="js/plugins.js"></script>
