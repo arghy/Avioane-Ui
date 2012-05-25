@@ -1598,33 +1598,102 @@ float:left;
 margin:10px 0px 3px 15px;
 }
 
-#planes_health{
-float:left;
+#mini_info{
 width:275px;
 height:275px;
 border:10px solid #ccc;
 border-radius:7px;
 -moz-border-radius:7px;
-margin:27px 0px 3px 15px;
+float:left;
+margin:10px 0px 3px 15px;
 }
 
-#planes_health ul{
+
+#timer{
+width:270px;
+height:75px;
+background:#dfdfdf;
+margin:0px;
+padding:6px 0px 0px 5px;
+
+font-size:12px;
+font-weight:bold;
+color:#fff;
+text-shadow:-1px 1px #000;
+}
+
+#timer h1{
+float:left;
+display:inline;
+font-size:25px;
+margin-left:15px;
+color:#689D41;
+text-shadow:-1px 1px 0px #fff;
+}
+
+#timer h2{
+float:left;
+display:inline;
+font-size:25px;
+margin-left:15px;
+color:#9D4141;
+text-shadow:-1px 1px 0px #fff;
+}
+
+#seconds{
+width:88px;
+height:68px;
+border:1px solid #fff;
+float:right;
+margin-right:5px;
+margin-top:-1px;
+background:#a6a6a6;
+border-radius:5px;
+-moz-border-radius:5px;
+font-size:50px;
+text-align:center;
+text-shadow:-1px 2px 1px #7e7e7e;
+}
+
+#weapons{
+float:left;
+width:190px;
+height:195px;
+}
+
+#weapons ul{
+width:190px;
 list-style:none;
-width:275px;
+padding-left:10px;
+padding-top:10px;
+margin:0px;
+}
+
+#weapons li{
+float:left;
+padding:10px;
+cursor:crosshair;
+}
+
+
+#planes_health{
+float:right;
+list-style:none;
+width:75px;
 padding:0px;
 margin-top:0px;
 margin-bottom:0px;
+border-left:1px solid #ccc;
 }
 
 #planes_health li{
-background:url(../img/battle/map/mini_avioane/bg.png) repeat-x;
 height:63px;
-width:275px;
+width:75px;
 border-top:1px solid #fff;
 border-bottom:1px solid #ccc;
 }
 
-#planes_health li:hover{background:url(../img/battle/map/mini_maps/bg_hover.png)}
+#planes_health li:hover{background:#ccc;}
 
 .mini_plane{
 width:53px;
@@ -1650,21 +1719,6 @@ background:#7e9368;
 margin:1px 0px 0px 0px;
 }
 
-#console{
-float:left;
-width:268px;
-height:72px;
-background:#000;
-margin:0px;
-padding:6px 0px 0px 5px;
-background:url(../img/battle/map/mini_maps/radar_bg.png) repeat;
-
-font-size:12px;
-font-weight:bold;
-color:#fff;
-text-shadow:-1px 1px #000;
-
-}
 
 
 /* =============================================================================

@@ -25,6 +25,12 @@ $( "#plane_holder" ).droppable({
 				$('#weapon_info>ul>li').fadeIn(700);
 			}
 		});
+		
+$('.weapon_change').live("click", function (){
+	$(this).parent().fadeOut(400,$(this).parent().remove)
+	$()
+	
+})
 
 });
 
