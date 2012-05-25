@@ -1605,7 +1605,7 @@ border:10px solid #ccc;
 border-radius:7px;
 -moz-border-radius:7px;
 float:left;
-margin:10px 0px 3px 15px;
+margin:29px 0px 3px 15px;
 }
 
 
@@ -1701,6 +1701,10 @@ height:45px;
 background:url(../img/battle/map/mini_maps/airborne.png) no-repeat;
 float:left;
 margin:9px;
+}
+
+.dead_plane{
+opacity:0.3;
 }
 
 .plane_health_bar{
