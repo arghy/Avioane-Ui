@@ -1305,7 +1305,6 @@ Profile
 	float:right;
 	width:180px;
 	height:200px;
-	background:#666666;
 	margin-top:100px;
 }
 	
@@ -1818,7 +1817,6 @@ border-bottom:1px solid #ccc;
 .mini_plane{
 width:53px;
 height:45px;
-background:url(../img/battle/map/mini_maps/airborne.png) no-repeat;
 float:left;
 margin:9px;
 }
