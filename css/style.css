@@ -1374,7 +1374,99 @@ Profile
 	height:200px;
 	margin-top:100px;
 }
-	
+
+/* =============================================================================
+Edit Profile
+========================================================================== */
+
+#edit_profile{
+}
+
+
+#edit_avatar{
+	width:650px;
+}
+
+#avatar_box{
+	padding:50px;
+	border:5px solid #ccc;
+	float:left;
+	margin-left:60px;
+	margin-top:40px;
+	border-radius:5px;
+	-moz-border-radisu:5px;
+}
+
+#arrow{
+	float:left;
+	width:128px;
+	height:41px;
+	margin-left:-20px;
+	margin-top:120px;
+	background:url(../img/user/edit_profile/arrow.png) no-repeat;
+}
+
+#edit_avatar p{
+	float:left;
+	font-size:20px;
+	font-weight:bold;
+	margin-top:125px;
+	margin-left:40px;
+}
+
+
+
+#edit_profile ul{
+	list-style:none;
+	padding:0px;
+	margin:0px auto;
+	margin-bottom:30px;
+	width:600px;
+}
+
+#edit_profile li{
+	margin-top:20px;
+}
+
+#edit_profile input{
+    padding: 20px;
+    border: solid 1px #E5E5E5;
+    outline: 0;
+    width: 200px;
+    background: #FFFFFF url('bg_form.png') left top repeat-x;
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+    -moz-border-radius:5px;
+    border-radius:5px;
+    font-size:14px;
+    font-weight:bold;
+    color: #999;
+    text-shadow:-1px 1px #fff;
+}
+
+#edit_profile input:hover,
+input:focus, textarea:focus {
+    border-color: #C9C9C9;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+}
+
+#edit_profile label {
+    margin-bottom:-20px;
+    color:#999;
+    text-shadow:-1px 1px #fff;
+    font-size:15px;
+    font-weight:bold;
+
+}
+
+.edit_succes{
+	width:40px;
+	height:41px;
+	background:url(../img/user/edit_profile/succes.png) no-repeat;
+	margin-left:15px;
+	float:right;
+}
+
 
 /* =============================================================================
 Versus Page
